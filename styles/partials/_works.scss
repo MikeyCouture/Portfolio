@@ -43,7 +43,6 @@
     h4{
         @include fontSizeText(14);
         text-transform: uppercase;
-    
     }
 
     P{
@@ -60,12 +59,8 @@
         left: 40px;
         top: 100px;
         transition: 0.4s;
-    }:hover{
-        color: white;
-    }
-
-    .fa-plus-square:hover{
-        transform: rotate(45deg);
+        cursor: pointer;
+        z-index: 20;
     }
 
     .overlay{
@@ -81,13 +76,14 @@
             margin: 0;
             display: block;
         }
-        // position: absolute;
-        // bottom: 150px;
-        // left: 10px;
-        // width: 50%;
-        // margin: 0 auto;
     }
 }
+
+.workItems i:hover{
+        color: white;
+        transform: rotate(45deg);
+    }
+
 
 @media only screen and (max-width: 900px){
     .worksBottom{

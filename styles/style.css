@@ -336,7 +336,7 @@ h2, h1 {
   background-color: #303030; }
 
 .aboutMe {
-  width: 60%;
+  width: 80%;
   position: relative;
   margin: 0 auto; }
   .aboutMe h3 {
@@ -350,10 +350,6 @@ h2, h1 {
     line-height: 28px;
     text-align: center;
     border-bottom: 1px solid #f0a045; }
-
-@media only screen and (max-width: 768px) {
-  .aboutMe {
-    width: 80%; } }
 
 @media only screen and (max-width: 400px) {
   .aboutMe {
@@ -467,7 +463,7 @@ h3.personalTitle {
   text-align: center; }
 
 .skillsDescription {
-  width: 60%;
+  width: 80%;
   margin: 0 auto; }
   .skillsDescription h3 {
     font-size: 14px;
@@ -491,34 +487,22 @@ h3.personalTitle {
     line-height: 28px;
     color: #9f9f9f; }
 
-@media only screen and (max-width: 768px) {
-  .skillsDescription {
-    width: 80%; } }
-
 @media only screen and (max-width: 400px) {
   .skillsDescription {
     width: 100%; } }
 
 .skillIcons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   background-color: #383838;
   border-radius: 5px; }
   .skillIcons i {
-    font-size: 100px;
-    margin: 3%;
+    font-size: 44px;
+    margin: 2%;
     color: #f0a045; }
     .skillIcons i img {
-      height: auto;
-      width: 80px; }
+      height: 45px;
+      width: 33px; }
 
 .latestWorks {
   margin-top: 200px; }
@@ -573,13 +557,9 @@ h3.personalTitle {
     top: 100px;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
-    transition: 0.4s; }
-  .workItems :hover {
-    color: white; }
-  .workItems .fa-plus-square:hover {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg); }
+    transition: 0.4s;
+    cursor: pointer;
+    z-index: 20; }
   .workItems .overlay {
     position: relative; }
   .workItems .workItemsDes {
@@ -589,6 +569,12 @@ h3.personalTitle {
     .workItems .workItemsDes h4, .workItems .workItemsDes p {
       margin: 0;
       display: block; }
+
+.workItems i:hover {
+  color: white;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
 
 @media only screen and (max-width: 900px) {
   .worksBottom {
