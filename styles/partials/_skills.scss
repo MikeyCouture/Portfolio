@@ -1,0 +1,63 @@
+
+// SKILLS STYLES
+
+.skills{
+    background-color: $black;
+    margin-top: 200px;
+}
+
+.skills .wrapper{
+    text-align: center;
+}
+
+.skillsDescription{
+    width: 60%;
+    margin: 0 auto;
+    h3{
+        @include fontSize(14);
+        margin: 0;
+        display: inline-block;
+        border-bottom: 1px solid $orange;
+        margin-bottom: 20px;
+    }
+
+    p{
+        margin: 0 auto;
+        @include fontSizeText(10);
+        color: $textcolor;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .skillsDescription{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .skillsDescription{
+        width: 100%;
+    }
+}
+
+.skillIcons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    background-color: $softblack;
+    border-radius: 5px;
+
+    i{
+        font-size: 100px;
+        margin: 3%;
+        color: $orange;
+        img {
+            height: auto;
+            width: 80px;
+        }
+    }
+}
+
+

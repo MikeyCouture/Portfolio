@@ -1,0 +1,94 @@
+// CONTACT STYLES
+
+
+.contact{
+    margin-top: 200px;
+}
+
+// ----------------------------------------- CONTACT TOP STYLES
+.contactTop{
+    text-align: center;
+     h3{
+        @include fontSize(14);
+        margin: 0;
+        display: inline-block;
+        border-bottom: 1px solid $orange;
+        margin-bottom: 20px;
+    }
+
+    p{
+        margin: 0 auto;
+        @include fontSizeText(10);
+        color: $textcolor;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .contactTop{
+        p{
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .contactTop{
+        p{
+            width: 100%;
+        }
+    }
+}
+
+// --------------------------------------------- FORM
+
+
+.formContent{
+      input, button, textarea{
+        width: 60%;
+        margin: 0 auto;
+      }
+  }
+
+  .formContent{
+      button{
+          margin-top: 20px;
+      }
+  }
+
+  .formContent{
+      input, textarea{
+        background-color: $softblack;
+        border: none;
+        border-bottom: 1px solid $orange;
+        color: white;
+        margin: 10px;
+      }
+  }
+
+  form{
+      text-align: center;
+  }
+
+  button{
+    background: none;
+    border: 2px solid #f0a045;
+    color: #f0a045;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    width: 150px;
+  }
+
+  button:hover{
+    border: 2px solid white;
+    color: white;
+    transition: 0.4s;
+  }
+
+@media only screen and (max-width: 600px){
+  .formContent{
+      input, button, textarea{
+          width: 100%;
+      }
+  }
+}

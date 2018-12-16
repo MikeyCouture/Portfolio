@@ -1,0 +1,200 @@
+
+// ---------------------------- HEADER STYLES
+.mainHeader{
+    background-image: linear-gradient(to bottom, #000000b3, #303030), url("./assets/charl-van-rooy-548103-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: auto;
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+.wrapper{
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+// --------------------------- HEADER NAV BAR
+
+.headerNav{
+    position: fixed;
+    right: 0px;
+    width: 5%;
+    z-index: 20;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        li{
+            margin: 10px;
+            @include fontSizeText(8);
+            margin: 25px;
+            transform: rotate(90deg);
+            transition: 0.4s;
+            a{
+                color: white;
+                text-decoration: none;
+                transition: 0.4s;
+            }
+         }
+    }
+}
+
+.headerNav li:hover{
+    transform: rotate(0deg);
+}
+
+.headerNav a:hover{
+    color: $orange;
+}
+
+@media only screen and (max-width: 600px){
+    .headerNav{
+        display: none;
+    }
+}
+
+.headerSection{
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex;
+}
+
+@media only screen and (max-width: 768px){
+    .headerSection{
+        flex-direction: column;
+    }
+}
+
+.headerInfo{
+    margin-left: 10%;
+    .hiBox{
+        @include fontSizeText(10);
+        color: black;
+        text-shadow: none;
+        p{
+            display: inline-block;
+            margin: 0;
+            background: $orange;
+            font-weight: bold;
+            z-index: 10;
+            position: relative;
+            padding: 3px;
+        }
+        p::before{
+            content: '';
+            width: 25px;
+            height: 25px;
+            background: $orange;
+            position: absolute;
+            left: 5px;
+            top: 13px;
+            display: inline-block;
+            transform: rotate(134deg);
+            z-index: -10;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .headerInfo{
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .headerInfo{
+        margin-left: 0;
+    }
+}
+
+// CONTACT BUTTON
+.headerInfo a{
+    background: none;
+    border: 2px solid #f0a045;
+    color: #f0a045;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    width: 150px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.headerInfo a:hover{
+    border: 2px solid white;
+    color: white;
+}
+
+// ----------------------------------------- HEADER IMAGE
+.headerSection img{
+    min-width: 40%;
+    width: 60%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+h2, h1 {
+    @include fontSize(20);
+}
+
+.headerAbout{
+    @include fontSizeText(12);
+}
+
+.headerPic{
+    .testBox{
+    height: 50px;
+    width: 50px;
+    background: orange;
+    }
+}
+
+//  ----------------------------------------- SOCIAL NAV
+
+// .followSection{
+//     text-align: center;
+//     @include fontSizeText(10);
+// }
+
+// .followBottom{
+//     position: fixed;
+//     top: 50%;
+//     transform: translate(-50%, -50%);
+//     i{
+//         border: 1px solid $orange;
+//         border-radius: 2px;
+//         padding: 5px;
+//         margin: 10px;
+//     }
+//     a{
+//         color: $orange;
+//     }
+// }
+
+
+
+//  -----------------------------------------  HAMBURGER MENU
+.fa-bars{
+    color: $orange;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .fa-bars{
+        display: block;
+    }
+}

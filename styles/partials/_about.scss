@@ -1,0 +1,116 @@
+//    -----------------------------ABOUT SECTION
+
+.aboutSection{
+    background-color: $black;
+}
+
+.aboutMe{
+    width: 60%;
+    position: relative;
+    margin: 0 auto;
+    h3{
+        margin: 0;
+        @include fontSize(14);
+        text-align: center;
+        border-bottom: 1px solid $orange;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .aboutMe{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .aboutMe{
+        width: 100%;
+    }
+}
+
+// HI BOX IN ABOUT SECTION
+.hiBox{
+        @include fontSizeText(10);
+        color: black;
+        text-shadow: none;
+        p{
+            display: inline-block;
+            margin: 0;
+            background: $orange;
+            font-weight: bold;
+            z-index: 10;
+            position: relative;
+        }
+        p::before{
+            content: '';
+            width: 25px;
+            height: 25px;
+            background: $orange;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            display: inline-block;
+            transform: rotate(134deg);
+            z-index: -10;
+        }
+}
+
+.aboutContent{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.aboutName{
+    @include fontSizeText(12);
+    text-align: center;
+    margin: 20px auto;
+    span{
+        color: $orange;
+    }
+}
+
+.aboutDev{
+    @include fontSizeText(12);
+    color: $orange;
+}
+
+.aboutText{
+    @include fontSizeText(10);
+    color: $textcolor;
+}
+
+.personalInfo{
+    background: $softblack;
+    text-align: center;
+    padding: 40px;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 400px){
+    .personalInfo{
+        padding: 5px;
+        p, span{
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.personalContainer{
+    p{
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include fontSizeText(10);
+        
+        span{
+            color: $textcolor;
+        }
+        i{
+            color: $orange;
+        }
+    }
+}
+
+h3.personalTitle{
+    margin: 20px auto;
+}

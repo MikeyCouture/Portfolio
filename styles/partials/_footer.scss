@@ -1,0 +1,12 @@
+// FOOTER STYLES
+
+footer{
+    height: 30px;
+    margin-top: 30px;
+    background-image: linear-gradient(to top, #424242,#303030);
+
+    h3{
+        @include fontSize(8);
+        text-align: center;
+    }
+}

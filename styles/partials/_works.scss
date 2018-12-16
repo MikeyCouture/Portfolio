@@ -1,0 +1,140 @@
+
+// LATEST WORKS
+
+.latestWorks{
+    margin-top: 200px;
+}
+
+.worksBottom{
+    background-color: $softblack;
+    border-radius: 5px;
+   .workContainer {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+   }
+}
+
+@media only screen and (max-width: 768px){
+    .workContainer, .workContainerTwo{
+        flex-direction: column;
+   }
+
+   .workItems:nth-of-type(odd){
+       margin-left: 0;
+   }
+   .workItems:nth-of-type(even){
+       margin-right: 0;
+   }
+
+}
+
+
+
+.workItems{
+    position: relative;
+    margin: 50px 0 80px 0;
+
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    h4{
+        @include fontSizeText(14);
+        text-transform: uppercase;
+    
+    }
+
+    P{
+        color: $orange;
+    }
+
+    i{
+        position: absolute;
+        top: 90px;
+        left: 100px;
+        color: orange;
+        font-size: 30px;
+        position: absolute;
+        left: 40px;
+        top: 100px;
+        transition: 0.4s;
+    }:hover{
+        color: white;
+    }
+
+    .fa-plus-square:hover{
+        transform: rotate(45deg);
+    }
+
+    .overlay{
+        position: relative;
+    }
+
+    .workItemsDes{
+        position: absolute;
+        bottom: 10px;
+        left: 5px;
+
+        h4, p{
+            margin: 0;
+            display: block;
+        }
+        // position: absolute;
+        // bottom: 150px;
+        // left: 10px;
+        // width: 50%;
+        // margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .worksBottom{
+       flex-direction: column;
+    }
+    .workItems{
+        margin: 0 auto;
+
+        i{
+            top: 70px;
+            left: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .workItems img{
+        width: 100%;
+    }
+}
+
+
+.worksTop{
+    text-align: center;
+    h3{
+        @include fontSize(14);
+        text-align: center;
+        display: inline-block;
+        border-bottom: 1px solid $orange;
+    }
+
+    p{
+        margin: 0 auto;
+        @include fontSizeText(10);
+        color: $textcolor;
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .worksTop p{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .worksTop p{
+        width: 100%;
+    }
+}
