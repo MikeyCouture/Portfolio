@@ -6,7 +6,15 @@ footer{
     background-image: linear-gradient(to top, #424242,#303030);
 
     h3{
-        @include fontSize(8);
+        @include fontSize(7);
         text-align: center;
+    }
+}
+
+@media only screen and(max-width: 400px){
+    footer{
+        h3{
+            @include fontSize(5);
+        }
     }
 }

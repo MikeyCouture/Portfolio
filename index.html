@@ -14,7 +14,7 @@
 </head>
 <body>
 <!-- main section -->
-    <section class="mainHeader">
+    <section class="mainHeader" id="mainHeader">
 <!-- nav that will hold the ul links -->
         <nav class="headerNav">
             <ul>
@@ -26,11 +26,10 @@
             </ul>
         </nav>
         <section class="wrapper">
-            <i class="fas fa-bars"></i>
 <!-- middle section of the header - holding the image and other info -->
             <div class="headerSection">
 <!-- header image here -->
-                    <img src="./styles/assets/portPicThree.png" alt="a picture of Mikey Couture, Photo By: Pam Lau">
+                    <img src="./assets/portPicThree.png" alt="a picture of Mikey Couture, Photo By: Pam Lau">
 <!-- header info here -->
                 <div class="headerInfo">
                     <div class="hiBox">
@@ -39,19 +38,10 @@
                     <h2>Mikey Couture</h2>
                     <h1>Front-End Web Developer</h1>
                     <div class="headerAbout">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. In laudantium voluptatum maxime reprehenderit aliquid unde repellat illo nam. Veritatis, non!</p>
+                        <p>I take pride writing clean, efficient and useful code. I'm thrilled by the logical approach of Javascript and the creative possibilities that come with it. When I'm not busy learning new code, you can catch me jogging, playing/watching hockey or reading anything science-fiction/fantasy.</p>
                     </div>
                     <a href="#contact">Contact Me <i class="fas fa-long-arrow-alt-right"></i> </a>
-                </div>
-<!-- header follow section -->
-                <div class="followSection">
-                    <!-- <div class="followTop">Follow me:</div> -->
-                    <!-- <div class="followBottom">
-                        <a href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-github"></i></a>
-                    </div> -->
-                </div>
+                </div>    
             </div>
         </section>
     </section>
@@ -63,14 +53,15 @@
                 <h3>About Me</h3>
                 <div class="aboutContent">
                     <p class="aboutName"> Mikey Couture <span>/</span> / <span>Web Developer</span> </p>
-                    <p class="aboutText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel sint accusantium vitae modi nobis ab quidem quibusdam animi, ipsum temporibus!</p>
-                    <p class="aboutText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis illo, cum cumque sequi vel doloremque veniam non omnis libero laudantium perferendis illum reprehenderit at accusamus.</p>
+                    <p class="aboutText">I take pride writing clean, efficient and useful code. I enjoy the logical approach of Javascript and the creative possibilities that come with it. When I'm not busy learning new code, you can catch me jogging, playing /watching
+                    hockey or reading anything science-fiction/fantasy.</p>
+                    <!-- <p class="aboutText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis illo, cum cumque sequi vel doloremque veniam non omnis libero laudantium perferendis illum reprehenderit at accusamus.</p> -->
                 </div>
                 <h3 class="personalTitle">Personal Info</h3>
                 <div class="personalInfo">
                     <div class="personalContainer">
                         <p>Full Name: <span>Michel Couture</span> </p>
-                        <p>Email: <span>michelcouture42@gmail.com</span> </p>
+                        <p>Email: <span class="emailAddress">michelcouture42@gmail.com</span> </p>
                         <p>Phone: <span>905-658-9903</span> </p>
                         <p>Website: <span>mikeycouture.com</span> </p>
                         <p>Social: <span> <a href="https://www.linkedin.com/in/mikey-couture-19b23aa6/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
@@ -88,19 +79,19 @@
         <section class="wrapper">
             <div class="skillsDescription">
                 <h3>Toolset & Skills</h3>
-                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt illo reiciendis sint aspernatur quam natus expedita ut soluta architecto, doloribus, placeat, laborum voluptate</p>
+                <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero facilis id voluptate impedit dolore hic cupiditate laboriosam ab aliquam maxime!</p> -->
             </div>
             <div class="skillIcons">
-                <i class="fab fa-html5" data-aos="fade-right" data-aos-delay="400"></i></i>
-                <i class="fab fa-css3-alt" data-aos="fade-up-right" data-aos-delay="450"></i>
-                <i class="fab fa-sass" data-aos="fade-down-right" data-aos-delay="500"></i>
-                <i class="fab fa-js-square" data-aos="fade-left" data-aos-delay="400"></i>
-                <i class="devicon-jquery-plain" data-aos="fade-up-left" data-aos-delay="450"></i>
-                <i class="fab fa-github" data-aos="fade-up" data-aos-delay="500"></i>
-                <i class="devicon-visualstudio-plain" data-aos="fade-up" data-aos-delay="400"></i>
-                <i class="fab fa-react" data-aos="fade-up-right" data-aos-delay="475"></i>
-                <i class=“firebase” data-aos="fade-up" data-aos-delay="500"> <img src="./styles/assets/firebase.svg" alt=""></i>
-                <i class="devicon-photoshop-plain" data-aos="fade-down" data-aos-delay="425"></i>
+                <i class="fab fa-html5" data-aos="fade-right" data-aos-once="true" data-aos-delay="400"></i></i>
+                <i class="fab fa-css3-alt" data-aos="fade-up-right" data-aos-delay="450" data-aos-once="false"></i>
+                <i class="fab fa-sass" data-aos="fade-down-right" data-aos-delay="500" data-aos-once="false"></i>
+                <i class="fab fa-js-square" data-aos="fade-left" data-aos-delay="400" data-aos-once="false"></i>
+                <i class="devicon-jquery-plain" data-aos="fade-up-left" data-aos-delay="450" data-aos-once="false"></i>
+                <i class="fab fa-github" data-aos="fade-up" data-aos-delay="500" data-aos-once="false"></i>
+                <i class="devicon-visualstudio-plain" data-aos="fade-up" data-aos-delay="400" data-aos-once="false"></i>
+                <i class="fab fa-react" data-aos="fade-up-right" data-aos-delay="475" data-aos-once="false"></i>
+                <i class=“firebase” data-aos="fade-up" data-aos-delay="500" data-aos-once="false"> <img src="./assets/firebase.svg" alt=""></i>
+                <i class="devicon-photoshop-plain" data-aos="fade-down" data-aos-delay="425" data-aos-once="false"></i>
             </div>
         </section>
     </section>
@@ -110,58 +101,49 @@
         <section class="wrapper">
                 <div class="worksTop">
                     <h3>Latest Works</h3>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt illo reiciendis sint aspernatur quam natus
-                        expedita ut soluta architecto, doloribus, placeat, laborum voluptate</p>
+                    <p>Here are a few of my favourite portfolio pieces!</p>
                 </div>
                 <div class="worksBottom">
                     <div class="workContainer">
-                        <div class="workItems">
-                            <a href=""><i class="far fa-plus-square"></i></a>
-                            <div class="overlay">
-                                <img src="./styles/assets/pugp.png" alt="">
-                                <div class="workItemsDes">
-                                    <h4>Pug Puzzles</h4>
-                                    <p>A interactive puzzle game built with jQuery and featuring Dug the Pug! 🐶</p>
-                                    <p>Using: HTML5 // SCSS // jQuery // Responsive Design // Accessible Design</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="workItems">
-                            <a href=""><i class="far fa-plus-square"></i></a>
-                            <div class="overlay">
-                                <img src="./styles/assets/sophie.png" alt="">
-                                <div class="workItemsDes">
-                                    <h4>Sophie's World</h4>
-                                    <p>A fully responsive site based on a PSD mockup. 🍋</p>
-                                    <p>Using: HTML5 // CSS // Responsive Design // Accessible Design</p>
-                                </div>
-                            </div>
+                        <img src="./assets/pugP.jpg" alt="#">
+                        <div class="workItemsDes">
+                            <h4>Pug Puzzles</h4>
+                            <p>A interactive puzzle game built with jQuery and featuring Dug the Pug! 🐶</p>
+                            <p>HTML5 /<span>/</span> SCSS <span>/</span>/ jQuery /<span>/</span> Responsive Design <span>/</span>/ Accessible Design</p>
+                            <a href="https://github.com/MikeyCouture/project3" target="_blank">Github</a>
+                            <a href="http://mikeycouture.com/pugpuzzles/" target="_blank">Live</a>
                         </div>
                     </div>
-
                     <div class="workContainer">
-                        <div class="workItems">
-                            <a href=""><i class="far fa-plus-square"></i></a>
-                            <div class="overlay">
-                                <img src="./styles/assets/runrun.png" alt="">
-                                <div class="workItemsDes">
-                                    <h4>Run Forcast Run</h4>
-                                    <p>Using multiple API calls and jQuery, we built an app for runners by runners. Check the weather before your morning or afternoon jog! 🏃‍♀️</p>
-                                    <p>Using: Javascript // APIs // jQuery // GitHub // HTML5 // SASS // Responsive Design // Accessible Design</p>
-                                </div>
-                            </div>
+                        <div class="workItemsDes">
+                            <h4>Sophie's World</h4>
+                            <p>A fully responsive site based on a PSD mockup. 🍋</p>
+                            <p>HTML5 /<span>/</span> CSS <span>/</span>/ Responsive Design /<span>/</span> Accessible Design</p>
+                            <a href="https://github.com/MikeyCouture/mikey_couture_project2">Github</a>
+                            <a href="#">Live</a>
                         </div>
-                        <div class="workItems">
-                            <a href=""><i class="far fa-plus-square"></i></a>
-                            <div class="overlay">
-                                <img src="./styles/assets/versvs.png" alt="">
-                                <div class="workItemsDes">
-                                    <h4>Versvs</h4>
-                                    <p>Use Versvs to compair your favourite author's best and worst rated book on Goodreads. 📚</p>
-                                    <p>Using: React // Javascript // APIs // Firebase // jQuery // GitHub // SASS // Responsive Design // Accessible Design</p>
-                                </div>
-                            </div>
+                        <img src="./assets/sophie.jpg" alt="#">
+                    </div>
+                    <div class="workContainer">
+                        <img src="./assets/runFrun.jpg" alt="#">
+                        <div class="workItemsDes">
+                            <h4>Run Forcast Run</h4>
+                            <p>Using multiple API calls and jQuery, we built an app for runners by runners. Check the weather before your morning
+                                or afternoon jog! 🏃‍♀️</p>
+                            <p>Javascript /<span>/</span> APIs <span>/</span>/ jQuery /<span>/</span> GitHub <span>/</span>/ HTML5 /<span>/</span> SASS <span>/</span>/ Responsive Design /<span>/</span> Accessible Design </p>
+                            <a href="https://github.com/MikeyCouture/project4-Mikey-Luca" target="_blank">Github</a>
+                            <a href="http://mikeycouture.com/runforcastrun/" target="_blank">Live</a>
                         </div>
+                    </div>
+                    <div class="workContainer">
+                        <div class="workItemsDes">
+                            <h4>Versvs</h4>
+                            <p>Use Versvs to compair your favourite author's best and worst rated book on Goodreads. 📚</p>
+                            <p>React /<span>/</span> Javascript <span>/</span>/ APIs /<span>/</span> Firebase <span>/</span>/ jQuery /<span>/</span> GitHub <span>/</span>/ SASS /<span>/</span> Responsive Design <span>/</span>/ Accessible Design</p>
+                            <a href="https://github.com/MikeyCouture/when-you-peaked" target="_blank">Github</a>
+                            <a href="https://versvs-2385d.firebaseapp.com/" target="_blank">Live</a>
+                        </div>
+                        <img src="./assets/versvs.jpg" alt="#">
                     </div>
                 </div>
         </section>
@@ -172,11 +154,10 @@
         <section class="wrapper">
             <div class="contactTop">
                 <h3>Get In Touch</h3>
-                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum nesciunt illo reiciendis sint aspernatur quam natus
-                    expedita ut soluta architecto, doloribus, placeat, laborum voluptate</p>
+                <p> Get in touch if you would like to work together, problem-solve or just have a good chat over some coffee!</p>
             </div>
 
-            <div class="contactbottom">
+            <div class="contactBottom">
                 <div class="formContent">
                     <form action="" method="" class="myForm" autocomplete="off" name="myForm">
                         <input type="text" name="Name" placeholder="Name" />

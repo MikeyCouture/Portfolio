@@ -3,7 +3,7 @@
 
 .skills{
     background-color: $black;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 .skills .wrapper{
@@ -28,22 +28,7 @@
     }
 }
 
-// @media only screen and (max-width: 768px){
-//     .skillsDescription{
-//         width: 80%;
-//     }
-// }
-
-@media only screen and (max-width: 400px){
-    .skillsDescription{
-        width: 100%;
-    }
-}
-
 .skillIcons{
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
     width: 80%;
     margin: 0 auto;
     background-color: $softblack;
@@ -57,6 +42,16 @@
             height: 45px;
             width: 33px;
         }
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .skillsDescription{
+        width: 100%;
+    }
+
+    .skillIcons{
+        width: 100%;
     }
 }
 

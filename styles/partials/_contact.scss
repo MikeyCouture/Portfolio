@@ -2,11 +2,13 @@
 
 
 .contact{
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 // ----------------------------------------- CONTACT TOP STYLES
 .contactTop{
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
      h3{
         @include fontSize(14);
@@ -24,19 +26,20 @@
     }
 }
 
-@media only screen and (max-width: 768px){
-    .contactTop{
-        p{
-            width: 80%;
-        }
-    }
+.contactBottom{
+    width: 80%;
+    margin: 0 auto;
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 768px){
     .contactTop{
         p{
             width: 100%;
         }
+    }
+
+    .contactBottom{
+        width: 100%;
     }
 }
 
@@ -45,8 +48,8 @@
 
 .formContent{
       input, button, textarea{
-        width: 60%;
-        margin: 0 auto;
+        width: 100%;
+        // margin: 0 auto;
       }
   }
 
@@ -62,12 +65,12 @@
         border: none;
         border-bottom: 1px solid $orange;
         color: white;
-        margin: 10px;
+        margin-bottom: 10px;
       }
   }
 
   form{
-      text-align: center;
+    //   width: 100%;
   }
 
   button{
@@ -88,7 +91,7 @@
 @media only screen and (max-width: 600px){
   .formContent{
       input, button, textarea{
-          width: 100%;
+        //   width: 100%;
       }
   }
 }

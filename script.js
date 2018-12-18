@@ -1,39 +1,27 @@
 const portfolioApp = {};
 
-// const imageArray = [
-//     "waqar-1204134-unsplash.jpg",
-//     "jonas-off-1209715-unsplash.jpg",
-//     "charl-van-rooy-548103-unsplash.jpg"
-// ]
 
 portfolioApp.init = function (){
 
+    const randomImages = [
+        'assets/charl-van-rooy-548103-unsplash.jpg',
+        'assets/jonas-off-1209715-unsplash.jpg',
+        'assets/gabriel-santiago-22198-unsplash.jpg',
+        'assets/john-duncan-1219609-unsplash.jpg',
+        'assets/ryan-hutton-37733-unsplash.jpg',
+        'assets/nanda-dian-pratama-764266-unsplash.jpg'
+    ]
 
-// poor attempt to sort through an array
-    // for(let i=0; i<imageArray.length; i++){
-    //     // return (imageArray[i]);
-    //     // $(".mainHeader").append(imageArray[i])
-    //     random = (imageArray[0][Math.floor(Math.random() * imageArray.length)]);
-    //     console.log(imageArray[i]);
-    // }
+    let randomNum = Math.floor(Math.random() * 6);
+    let randomImage = randomImages[randomNum];
+    console.log(randomImage);
 
-    $(".fa-plus-square").on("click", function (e) {
-        // $(".longWeather").toggleClass("open");
-        // $(".weather").toggleClass("close");
-        console.log("im clicked!");
-        $('.fa-plus-square').css({
-            'transform': 'rotate(90deg)'
-        })
-
-    });
-
-
-
-
-
+    $(".mainHeader").css({ "background-image": `linear-gradient(to bottom, #000000b3, #303030), url(${randomImage})`});
+    
 }
-
 
 $(function () {
     portfolioApp.init();
 });
+
+
